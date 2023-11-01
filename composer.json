@@ -1,5 +1,5 @@
 {
-    "name": "ed/redis-database-model",
+    "name": "ed9/redis-database-model",
     "description": "Laravel Redis Model Extension: Supercharge Laravel with high-performance Redis for efficient caching, real-time data, and more!!!",
     "type": "library",
     "license": "MIT",
