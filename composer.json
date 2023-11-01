@@ -1,0 +1,14 @@
+{
+  "name": "ed9/redis-database-model",
+  "license": "MIT",
+  "description": "Laravel Redis Model Extension: Supercharge Laravel with high-performance Redis for efficient caching, real-time data, and more!!!",
+  "autoload": {
+    "psr-4": {
+      "Ed9\\RedisDatabaseModel\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0.2",
+    "illuminate/database": "^9.0"
+  }
+}
