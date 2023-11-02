@@ -1,18 +1,32 @@
 {
-    "name": "ed9/redis-database-model",
-    "description": "Laravel Redis Model Extension: Supercharge Laravel with high-performance Redis for efficient caching, real-time data, and more!!!",
+    "name": "ed9/redis-doc",
+    "description": "Laravel Model using Redis as a Document Store",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ed9\\RedisDatabaseModel\\": "src/"
+            "Ed9\\RedisDocument\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "require": {
-        "php": "^8.0.2",
+        "php": "^8.0|^8.1|^8.2",
         "illuminate/database": "^9.0",
         "illuminate/redis": "^9.0",
-        "predis/predis": "v2.x-dev"
+        "predis/predis": "v2.x-dev",
+        "ed9/phpredis-json": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/ed9/phpredis-json.git"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ed9\\RedisDocument\\RedisDocumentServiceProvider"
+            ]
+        }
     }
 }
